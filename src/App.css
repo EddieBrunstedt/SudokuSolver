@@ -39,7 +39,7 @@ body {
 
 @media screen and (max-width: 360px) {
     .sudoku-table td, .sudoku-table tr {
-        Padding: 1px;
+        Padding: 2px;
     }
 }
 
@@ -88,13 +88,6 @@ body {
 .sudoku-table td:nth-of-type(3), .sudoku-table td:nth-of-type(6) {
     border-right: 1px solid var(--color-5);
 }
-
-
-
-
-
-
-
 
 td .filled-correct {
     border: 2px solid var(--color-3);
