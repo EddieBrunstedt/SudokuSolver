@@ -47,13 +47,11 @@ class App extends Component {
                 focusNext(currentInput);
 
             } else {
-                e.target.classList.add('filled-incorrect');
                 e.target.classList.remove('filled-correct');
                 e.target.value = '';
             }
         } else {
             e.target.classList.remove('filled-correct');
-            e.target.classList.remove('filled-incorrect');
         }
     }
 
