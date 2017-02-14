@@ -1,14 +1,21 @@
 :root {
-    --color-1: #264653; /* Main Primary color */
-    --color-2: #2a9d8f;
-    --color-3: #e9c46a;
-    --color-4: #f4a261;
-    --color-5: #e76f51;
+    --background: #50514F; /* Main Primary color */
+    --tableBorder: #F25F5C;
+    --heading: #F25F5C;
+    --buttonText: #F25F5C;
+    --inputBackground: #FFE066;
+    --filledOut: #247BA0;
+    --buttonBackground: #FFE066;
+    --stats: #70C1B3;
+    --inputText: #50514F;
+}
+
+hr {
+    border-color: var(--tableBorder);
 }
 
 body {
-    background-color: var(--color-1);
-
+    background-color: var(--background);
 }
 
 .App {
@@ -44,9 +51,9 @@ body {
 }
 
 .form-control {
-    background-color: var(--color-4);
+    background-color: var(--inputBackground);
     border-color: transparent;
-    color: #11273a;
+    color: var(--inputText);
     width: 40px;
     height: 36px;
     font-size: 24px;
@@ -82,20 +89,20 @@ body {
 }
 
 .sudoku-table tr:nth-of-type(4), .sudoku-table tr:nth-of-type(7) {
-    border-top: 1px solid var(--color-5);
+    border-top: 2px solid var(--tableBorder);
 }
 
 .sudoku-table td:nth-of-type(3), .sudoku-table td:nth-of-type(6) {
-    border-right: 1px solid var(--color-5);
+    border-right: 2px solid var(--tableBorder);
 }
 
 td .filled-correct {
-    border: 2px solid var(--color-3);
+    border: 2px solid var(--filledOut);
 }
 
 .section-heading {
     font-family: 'Bangers', cursive;
-    color: var(--color-5);
+    color: var(--heading);
 }
 
 .solveTime-hidden {
@@ -105,13 +112,14 @@ td .filled-correct {
 #solve-button {
     font-family: 'Bangers', cursive;
     font-size: 28px;
-    color: var(--color-1);
-    background-color: var(--color-3);
+    color: var(--buttonText);
+    background-color: var(--buttonBackground);
     border-color: transparent;
 }
 
 .animate-solve-time-element {
-    color: var(--color-3);
+    font-family: 'Droid Serif', serif;
+    color: var(--stats);
     animation-duration: 2s;
     animation-name: fadein;
     animation-timing-function: ease-in;
