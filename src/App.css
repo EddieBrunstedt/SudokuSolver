@@ -1,21 +1,24 @@
 :root {
-    --background: #edd9c0;
-    --tableBorder: #7d4627;
-    --heading: #7d4627;
-    --buttonText: #c9d8c5;
-    --buttonBackground: #7d4627;
-    --inputBackground: #fff;
-    --filledOut: green;
-    --stats: #7d4627;
-    --inputText: #7d4627;
+    --background: rgba(255, 177, 199, 0.28);
+    --tableBorder: #4D0015;
+    --heading: #C1607A;
+    --buttonText: white;
+    --buttonBackground: #4D0015;
+    --inputBackground: white;
+    --filledOut: lightgreen;
+    --stats: black;
+    --inputText: #666666;
 }
 
 hr {
     border-color: var(--tableBorder);
 }
-
+html {
+    font-size: 0.1rem !important;
+}
 body {
     background-color: var(--background);
+    font-size: 0.8rem !important;
 }
 
 .App {
