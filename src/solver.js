@@ -1,5 +1,4 @@
 import isTableOk from './tableCheck';
-import prettyMs from 'pretty-ms';
 function solver() {
 
   if (isTableOk()) {
@@ -124,16 +123,7 @@ function solver() {
     }
   }
 
-  const t0 = performance.now();
   backtrack(grid, 0, 0);
-  const t1 = performance.now();
-
-  const solveTime = prettyMs(t1 - t0, {compact: true});
-  const solveTimeElement = document.querySelector('#solveTime');
-
-  solveTimeElement.innerHTML = 'Your Sudoku was solved in <strong>' + solveTime + '</strong>. Yay computers!';
-  solveTimeElement.classList.remove('solveTime-hidden');
-  solveTimeElement.classList.add('animate-solve-time-element');
 
   printGridHtml(grid);
 }
