@@ -1,13 +1,13 @@
 :root {
-    --background: rgba(255, 177, 199, 0.28);
-    --tableBorder: #4D0015;
-    --heading: #C1607A;
-    --buttonText: white;
-    --buttonBackground: #4D0015;
+    --background: #ffcdb2;
+    --tableBorder: #b5838d;
+    --heading: #b5838d;
+    --buttonText: lightgrey;
+    --buttonBackground: #6d6875;
     --inputBackground: white;
-    --filledOut: lightgreen;
+    --filledOut: green;
     --stats: black;
-    --inputText: #666666;
+    --inputText: #6d6875;
 }
 
 hr {
